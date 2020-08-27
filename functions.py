@@ -2,8 +2,8 @@ import os
 from datetime import datetime
 import json
 
-from ResultGrapher import ResultGrapher
-from EmailSender import EmailSender
+# from ResultGrapher import ResultGrapher
+# from EmailSender import EmailSender
 
 project_settings = {}
 
@@ -68,7 +68,7 @@ def append_new_data(data, path_):
 def create_new_datafile(data, path_):
 
     with open(path_, 'w') as file_:
-        file_.write("time,currency,buying,selling\n")
+        file_.write("time,currency,selling,buying\n")
         file_.write(data + '\n')
 
 
